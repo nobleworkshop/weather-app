@@ -1,0 +1,166 @@
+@import './reset.css';
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 50px;
+
+	font-family: 'Rubik', sans-serif;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 40px 15px 50px;
+	background: linear-gradient(92.7deg, #4cb8c4 0%, #3cd3ad 100%), #232323;
+}
+
+.title {
+	margin-bottom: 20px;
+	font-family: 'Rubik';
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 1.18;
+	text-align: center;
+	color: #ffffff;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	width: 460px;
+	height: 54px;
+	background: #ffffff;
+	border-radius: 6px;
+}
+
+.input {
+	flex-grow: 1;
+	padding: 15px;
+
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1;
+	color: #000000;
+}
+
+.btn {
+	width: 145px;
+	height: 54px;
+	background: #e5464f;
+	border-radius: 6px;
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1;
+	color: #fff;
+
+	transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+	background: #f5313b;
+}
+
+/* Card */
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+
+	padding: 30px;
+	width: 360px;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+}
+
+.card::before {
+	content: '';
+
+	position: absolute;
+	left: 10px;
+	bottom: -10px;
+	z-index: -1;
+
+	width: calc(100% - 20px);
+	height: 100%;
+
+	background: #ffffff;
+	box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+	border-radius: 6px;
+}
+
+.card-city {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 33px;
+	color: #000000;
+}
+
+.card-city span {
+	display: inline-block;
+	vertical-align: text-top;
+
+	padding: 3px 5px;
+	background: #e5464f;
+	border-radius: 6px;
+
+	color: #fff;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1;
+}
+
+.card-weather {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-value {
+	font-size: 92px;
+	line-height: 1;
+	color: #000000;
+}
+
+.card-value sup {
+	font-size: 50%;
+}
+
+.card-img {
+}
+
+.card-description {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.footer {
+	margin-top: auto;
+	width: 100%;
+	padding: 8px 15px;
+	background: #e3f1ee;
+
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	color: #2e7695;
+}
+
+.footer a {
+	color: #2e7695;
+	text-decoration: none;
+}
